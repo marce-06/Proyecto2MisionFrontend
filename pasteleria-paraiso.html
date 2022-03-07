@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería Paraíso</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #FDF5E6;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: #ADD8E6;
+            padding: 10px;
+            text-align: center;
+            font-size: 20px;
+            color: black;
+        }
+
+        section {
+            background-color: #FFB6C1;
+            padding: 10px;
+            text-align: center;
+            font-size: 17px;
+            color: black;
+        }
+
+        table {
+            padding: 10px;
+            text-align: center;
+            font-size: 17px;
+            color: black;
+        }
+
+        form {
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #ADD8E6;
+            padding: 5px;
+            text-align: center;
+            font-size: 12px;
+            color: black;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Pastelería Paraíso</h2>
+        <img src="C:\Users\marcela\Desktop\Cursos\Launch X\Misión FrontEnd - JS\Semana 2\logo.png" alt="Pastelería Paraíso" width="150px" height="150px">
+    </header>
+
+    <section>
+        <h3>Sabores</h3>
+        <p>¡Disfruta de los sabores más deliciosos!</p>
+    </section>
+    
+    <table>
+        <tr>
+            <th>Chocolate</th>
+            <th>Vainilla</th>
+            <th>Marmoleado</th>
+            <th>Red velvet</th>
+            <th>Cheesecake</th>
+        </tr>
+        <tr>
+            <td><img src="http://cdn2.cocinadelirante.com/sites/default/files/images/2016/07/pasteldechocolateconcoca.jpg" alt="Pastel chocolate" width="250px" height="200px"></td>
+            <td><img src="https://www.bakefromscratch.com/wp-content/uploads/2020/02/Heilala-Cake-Web.jpg" alt="Pastel vainilla" width="250px" height="200px"></td>
+            <td><img src="https://www.demoslavueltaaldia.com/sites/default/files/styles/recetas_listado/public/pastel-marmoleado.jpg.jpg?itok=iXDgTy6C" alt="Pastel marmoleado" width="250px" height="200px"></td>
+            <td><img src="https://www.recetasparaestudiantes.com/wp-content/uploads/2017/11/tarta-red-velvet-recetas-para-estudiantes.jpg" alt="Pastel red velvet" width="250px" height="200px"></td>
+            <td><img src="https://image.essen-und-trinken.de/11835602/3x2-960-640/a2d92f3363052ad2e3f995839ee7083b/Xh/himbeer-cheesecake-fd417d75f5dde910f3272cbb051ea860-fjt20160612601-jpg--10399-.jpg" alt="Pastel cheesecake" width="250px" height="200px"></td>
+        </tr>
+        <tr>
+            <td>$100</td>
+            <td>$100</td>
+            <td>$200</td>
+            <td>$250</td>
+            <td>$300</td>
+        </tr>
+    </table>
+
+    <section>
+        <h3>Decoración</h3>
+        <p>¡Contamos con diferentes diseños!</p>
+    </section>
+
+    <table>
+        <tr>
+            <th>Letrero "Feliz Cumpleaños"</th>
+            <th>Velas</th>
+            <th>Flores comestibles</th>
+            <th>Fruta de temporada</th>
+            <th>Dulces</th>
+        </tr>
+        <tr>
+            <td><img src="https://img0.etsystatic.com/129/1/9461176/il_340x270.1038500856_j0uv.jpg" alt="Letrero Feliz Cumpleaños" width="250px" height="200px"></td>
+            <td><img src="https://cubretartas.com/modules/ph_simpleblog/featured/1.jpg" alt="Velas" width="250px" height="200px"></td>
+            <td><img src="https://i.pinimg.com/736x/50/6d/39/506d3974487b3dadd08c51b3b2388221.jpg" alt="Flores comestibles" width="250px" height="200px"></td>
+            <td><img src="https://i2.wp.com/www.pastelesdlulu.com/wp-content/uploads/2016/03/Pound-Cake-Fruit.jpg?fit=620%2C411&ssl=1" alt="Fruta de temporada" width="250px" height="200px"></td>
+            <td><img src="https://bakeplaysmile.com/wp-content/uploads/2016/01/Easy-Chocolate-Birthday-Cake-5-547x364.jpg" alt="Dulces" width="250px" height="200px"></td>
+        </tr>
+        <tr>
+            <td>$100</td>
+            <td>$150</td>
+            <td>$200</td>
+            <td>$200</td>
+            <td>$250</td>
+        </tr>
+    </table>
+
+    <section>
+        <h3>Realiza tu pedido</h3>
+        <p>¡Llena el siguiente formulario para pedir tu pastel ideal!</p>
+    </section>
+
+    <form action="/accion.js" id="form1" method="post">
+        <label for="nombre1">Nombre completo: </label>
+        <input type="text" id="nombre1" name="nombre1"><br><br>
+        <label for="celular1">Celular: </label>
+        <input type="tel" id="celular1" name="celular1" maxlength="10"><br><br>
+        <label for="correo1">Correo electrónico: </label>
+        <input type="email" id="correo1" name="correo1"><br><br>
+        <label>Elige uno o varios sabores:</label><br>
+        <input type="checkbox" id="sabor1" name="sabor1" value="chocolate">
+        <label for="sabor1">Chocolate</label>
+        <input type="checkbox" id="sabor2" name="sabor2" value="vainilla">
+        <label for="sabor2">Vainilla</label>
+        <input type="checkbox" id="sabor3" name="sabor3" value="marmoleado">
+        <label for="sabor3">Marmoleado</label>
+        <input type="checkbox" id="sabor4" name="sabor4" value="red velvet">
+        <label for="sabor4">Red velvet</label>
+        <input type="checkbox" id="sabor5" name="sabor5" value="cheesecake">
+        <label for="sabor5">Cheesecake</label><br><br>
+        <label>Elige las decoraciones:</label><br>
+        <input type="checkbox" id="deco1" name="deco1" value="letrero">
+        <label for="deco1">Letrero "Feliz Cumpleaños"</label>
+        <input type="checkbox" id="deco2" name="deco2" value="velas">
+        <label for="deco2">Velas</label>
+        <input type="checkbox" id="deco3" name="deco3" value="flores">
+        <label for="deco3">flores comestibles</label>
+        <input type="checkbox" id="deco4" name="deco4" value="fruta">
+        <label for="deco4">Fruta de temporada</label>
+        <input type="checkbox" id="deco5" name="deco5" value="dulces">
+        <label for="deco5">Dulces</label><br><br>
+        <label for="detalles">Detalles sobre el pastel:</label><br>
+        <input type="text" id="detalles" name="detalles"><br><br>
+        <input type="submit" value="Enviar">
+        <input type="reset">
+    </form>
+
+    <footer>
+        <p>Pastelería Paraíso</p>
+        <p>Av. Guadalajara 1500 Col. Balcones de San Miguel</p>
+        <p>Guadalupe, Nuevo León, México</p>
+        <p>Tel. 81-2160-4785</p>
+    </footer>
+
+</body>
+</html>
